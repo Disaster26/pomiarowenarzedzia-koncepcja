@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Narzędzia pomiarowe ze świadectwem wzorcowania - sklep | Narzędzia Pomiarowe SAWERON</title>
+<meta name="description" content="Suwmiarki, mikrometry, czujniki zegarowe, sprawdziany i aparatura pomiarowa - ponad 1500 produktów. Wzorcowanie we własnym laboratorium od 24 h, autoryzowany dystrybutor HOGETEX. Bydgoszcz, tel. 696 927 659.">
+<meta name="theme-color" content="#2f3437">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-2000.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/saira-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Saira;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Saira;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Inter;src:url(fonts/inter-rdzen.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Inter;src:url(fonts/inter-pl.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Saira fb";src:local("Arial");size-adjust:98%;ascent-override:96%;descent-override:26%}
+@font-face{font-family:"Inter fb";src:local("Arial");size-adjust:107%;ascent-override:90%;descent-override:22%}
+:root{--graf:#2f3437;--graf2:#24282b;--red:#f40000;--redb:#d40000;--ink:#1c2023;--mut:#535b61;--g:#eef0f2;--line:#d9dde1;--w:min(calc(100vw - 32px),1760px);--h1:56px}
+@media (min-width:761px){:root{--w:min(calc(100vw - 64px),1760px)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,"Inter fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(15.5px,.18vw + 14.6px,18px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:700;line-height:1.08;letter-spacing:-.005em}
+h2{font-size:clamp(28px,2.6vw,50px)}
+h3{font-size:clamp(17px,1.05vw,21px);font-weight:650;line-height:1.25}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+.ico{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:square;stroke-linejoin:miter}
+/* przycisk = czerwona tabliczka "PL" z logo: prostokat, minimalne zaokraglenie */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 28px;background:var(--redb);color:#fff;font:700 1.02rem/1 Saira,"Saira fb",Arial,sans-serif;letter-spacing:.01em;text-decoration:none;border:0;border-radius:3px;cursor:pointer;transition:background .15s;-webkit-tap-highlight-color:transparent}
+.btn:hover{background:#b80000}
+.btn .str{width:18px;height:10px;stroke:currentColor;fill:none;stroke-width:2}
+/* motyw: podzialka suwmiarki z czerwonym znacznikiem odczytu */
+.skala{position:relative;height:16px;color:var(--line);background:
+ repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 10px) left bottom/100% 7px no-repeat,
+ repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 50px) left bottom/100% 16px no-repeat}
+.skala::after{content:"";position:absolute;left:0;bottom:0;width:10px;height:10px;background:var(--red)}
+/* NAGLOWEK */
+.top{background:#fff;position:relative;z-index:20}
+.top-in{display:flex;align-items:center;gap:14px;height:var(--h1)}
+.logo{flex:none;display:block}
+.logo img{height:30px;width:auto}
+.szukaj{display:flex;align-items:stretch;height:46px;background:var(--g);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.szukaj input{flex:1;outline-offset:-2px;min-width:0;border:0;background:transparent;padding:0 14px;font:inherit;font-size:15.5px;color:var(--ink)}
+.szukaj input::placeholder{color:#6b7379}
+.szukaj button{flex:none;width:52px;border:0;background:var(--graf);color:#fff;display:grid;place-items:center;cursor:pointer}
+.top .szukaj.desk{display:none}
+.akcje{margin-left:auto;display:flex;align-items:center;gap:4px}
+.akc{display:inline-flex;align-items:center;gap:8px;min-width:44px;height:44px;justify-content:center;text-decoration:none;color:var(--graf);background:none;border:0;padding:0;cursor:pointer;font:inherit}
+.akc .t{display:none}
+.kosz .ik{position:relative;display:block}
+.kosz b{position:absolute;top:-8px;right:-10px;min-width:17px;height:17px;padding:0 4px;background:var(--red);color:#fff;font:700 11px/17px Inter,Arial,sans-serif;border-radius:2px;text-align:center}
+.tel-d{display:none}
+.szukaj.mob{margin:0 16px 10px}
+.kat{background:var(--graf);color:#fff;display:none}
+.kat ul{list-style:none;margin:0 auto;padding:0;display:flex;align-items:stretch;height:48px;gap:0}
+.kat a{display:flex;align-items:center;height:100%;padding:0 clamp(10px,1vw,20px);text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;position:relative}
+.kat a:hover{background:#3a4044}
+.kat li:first-child a{padding-left:0;font-weight:600;gap:10px}
+.kat li:first-child a:hover{background:none;color:#fff}
+.kat .wszystkie::before{content:"";width:16px;height:12px;background:linear-gradient(#fff,#fff) left top/100% 2px no-repeat,linear-gradient(#fff,#fff) left center/100% 2px no-repeat,linear-gradient(var(--red),var(--red)) left bottom/60% 2px no-repeat}
+.kat .wyr{margin-left:auto;color:#fff}
+.kat .wyr a{padding-right:0;gap:8px}
+.kat .wyr a::before{content:"";width:9px;height:9px;background:var(--red)}
+/* menu mobilne */
+.panel{position:fixed;inset:0;z-index:50;background:#fff;transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column;visibility:hidden}
+.panel.otw{transform:none;visibility:visible}
+.panel-g{display:flex;align-items:center;justify-content:space-between;height:var(--h1);padding:0 16px;border-bottom:1px solid var(--line);flex:none}
+.panel nav{overflow:auto;padding:8px 16px 24px}
+.panel h3{font-size:14px;color:var(--mut);font-family:Inter,Arial,sans-serif;font-weight:600;margin:16px 0 4px}
+.panel ul{list-style:none;margin:0;padding:0}
+.panel li a{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--g);text-decoration:none;font-size:16.5px;line-height:1.45}
+.panel li a::after{content:"";width:7px;height:7px;border-top:2px solid var(--mut);border-right:2px solid var(--mut);transform:rotate(45deg)}
+.panel .kont{margin-top:18px;padding:16px;background:var(--g);border-radius:3px;line-height:1.55}
+.panel .kont a{font-weight:700;font-size:19px;text-decoration:none}
+/* HERO */
+.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:calc(100svh - var(--h1) - 56px);color:#fff;background:var(--graf2);overflow:hidden}
+.hero picture,.hero .foto{position:absolute;inset:0;width:100%;height:100%}
+.hero .foto{object-fit:cover;object-position:50% 0}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(36,40,43,0) 22%,rgba(36,40,43,.55) 42%,rgba(36,40,43,.9) 58%,rgba(36,40,43,.96) 100%)}
+.hero-in{position:relative;z-index:2;padding:min(25svh,260px) 0 30px}
+.hero h1{font-size:clamp(29px,min(8.4vw,5.1svh),38px);max-width:15em;text-wrap:balance}
+.hero .lead{margin-top:14px;font-size:clamp(15px,min(4.1vw,2.35svh),17px);line-height:1.55;color:#e4e7e9;max-width:36em}
+.hero .btn{margin-top:26px;width:100%}
+.hero .skala{position:absolute;left:0;right:0;bottom:0;z-index:2;color:rgba(255,255,255,.38);height:12px}
+.hero .skala::after{left:16px}
+/* FAKTY */
+.fakty{padding:26px 0 30px;border-bottom:1px solid var(--line)}
+.fakty ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 18px}
+.fakty li{position:relative;padding-top:14px;border-top:1px solid var(--line);font-size:14.5px;line-height:1.45;color:var(--mut)}
+.fakty li::before{content:"";position:absolute;left:0;top:-5px;width:9px;height:9px;background:var(--red)}
+.fakty b{display:block;color:var(--ink);font-family:Saira,"Saira fb",Arial,sans-serif;font-size:17px;font-weight:650;margin-bottom:2px;line-height:1.25}
+/* SEKCJE */
+.sek{padding:clamp(52px,6vw,110px) 0}
+.sek-g{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 32px;margin-bottom:clamp(22px,2.4vw,40px)}
+.sek-g p{color:var(--mut);max-width:40em}
+.sek-g .skala{flex:0 0 100%;order:-1;margin-bottom:6px;background-size:160px 7px,160px 16px}
+.lnk{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--graf);white-space:nowrap;border-bottom:2px solid var(--red);padding-bottom:2px}
+/* KATEGORIE */
+.kategorie{background:var(--g)}
+.kafle{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:clamp(150px,44vw,220px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;margin-right:-16px;padding-right:16px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.kafel{scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;text-decoration:none;border-radius:3px;overflow:hidden;position:relative;transition:box-shadow .15s}
+.kafel img{width:100%;aspect-ratio:4/3;object-fit:contain;padding:8px 10px 0}
+.kafel div{padding:8px 14px 16px;flex:1}
+.kafel h3{font-size:16.5px}
+.kafel p{margin-top:4px;font-size:13.5px;line-height:1.4;color:var(--mut)}
+.kafel::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:28px;background:var(--red);transition:width .2s}
+.kafel:hover{box-shadow:0 6px 22px rgba(28,32,35,.1)}
+.kafel:hover::after{width:100%}
+/* PRODUKTY */
+.karuzela{position:relative}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,72vw,300px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-right:-16px;padding-right:16px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.prod{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:3px;background:#fff;min-width:0}
+.prod>a{display:block;text-decoration:none}
+.prod img{width:100%;aspect-ratio:4/3;object-fit:contain;padding:10px}
+.prod .opis{display:flex;flex-direction:column;flex:1;padding:4px 18px 18px;border-top:1px solid var(--g)}
+.prod h3{font-family:Inter,"Inter fb",Arial,sans-serif;font-size:15px;font-weight:500;line-height:1.45;margin-top:12px;min-height:4.35em}
+.prod h3 a{text-decoration:none}
+.prod h3 a:hover{text-decoration:underline}
+.cena{margin-top:12px;font-family:Saira,"Saira fb",Arial,sans-serif;font-size:24px;font-weight:700;line-height:1.1;color:var(--graf)}
+.netto{font-size:13.5px;color:var(--mut);margin-top:3px}
+.dost{display:flex;align-items:center;gap:8px;font-size:13.5px;margin-top:12px;color:var(--ink)}
+.dost::before{content:"";width:9px;height:9px;flex:none;background:var(--graf)}
+.dost.dni::before{background:none;border:2px solid #8a9298}
+.prod .dokosz{margin-top:auto;padding-top:16px}
+.dokosz button{width:100%;min-height:46px;border:2px solid var(--graf);background:#fff;color:var(--graf);font:700 15px/1 Saira,"Saira fb",Arial,sans-serif;border-radius:3px;cursor:pointer;transition:background .15s,color .15s}
+.dokosz button:hover{background:var(--graf);color:#fff}
+.strz{display:none}
+/* WZORCOWANIE (mocna sekcja) */
+.wzorc{background:var(--graf);color:#fff;display:grid;grid-template-columns:minmax(0,1fr)}
+.wzorc-foto{position:relative;min-height:300px;max-height:420px;overflow:hidden}
+.wzorc-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.wzorc-tekst{padding:44px 16px 56px}
+.wzorc-tekst .skala{color:rgba(255,255,255,.3);max-width:160px;margin-bottom:22px}
+.wzorc h2{max-width:13em}
+.wzorc-tekst>p{margin-top:18px;color:#d5dadd;max-width:36em}
+.wzorc-tekst a{color:#fff}
+.lista{list-style:none;margin:26px 0 0;padding:0;max-width:38em}
+.lista li{padding:14px 0 14px 24px;border-top:1px solid rgba(255,255,255,.16);position:relative;color:#d5dadd;line-height:1.5}
+.lista li::before{content:"";position:absolute;left:0;top:22px;width:9px;height:9px;background:var(--red)}
+.lista b{color:#fff;font-weight:600}
+.wzorc .btn{margin-top:28px}
+/* MARKI */
+.marki-g{display:grid;gap:18px}
+.marki-g p{color:var(--mut);max-width:42em}
+.marki-g p+p{margin-top:0}
+.marka-k{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:30px}
+.marka{position:relative;display:block;border-radius:3px;overflow:hidden;text-decoration:none;color:#fff;aspect-ratio:4/3;background:var(--graf)}
+.marka img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.marka:hover img{transform:scale(1.03)}
+.marka div{position:absolute;left:0;right:0;bottom:0;padding:60px 20px 20px;background:linear-gradient(180deg,rgba(36,40,43,0),rgba(36,40,43,.88) 55%)}
+.marka h3{font-size:clamp(20px,1.5vw,28px)}
+.marka p{margin-top:4px;color:#e1e5e8;font-size:15px;line-height:1.45}
+.inne{margin-top:22px;color:var(--mut);font-size:15.5px}
+.inne b{color:var(--ink);font-weight:600}
+/* ZAPYTANIE */
+.zap{background:var(--g)}
+.zap-g{display:grid;gap:32px}
+.zap-t p{margin-top:16px;color:var(--mut);max-width:36em}
+.dane{margin-top:26px;display:grid;gap:4px;line-height:1.5}
+.dane a{font-family:Saira,"Saira fb",Arial,sans-serif;font-weight:700;font-size:clamp(22px,1.6vw,28px);text-decoration:none;color:var(--graf)}
+.dane a.m{font-size:17px;font-family:Inter,"Inter fb",Arial,sans-serif;font-weight:600}
+.dane span{color:var(--mut);font-size:15px}
+#form{background:#fff;padding:22px 16px;border-radius:3px;display:grid;gap:14px;border-top:4px solid var(--graf)}
+#form label{display:grid;gap:6px;font-size:14px;font-weight:600}
+#form input,#form textarea{font:inherit;font-size:16px;font-weight:400;color:var(--ink);border:1px solid #b9c0c6;border-radius:3px;padding:12px 13px;background:#fff;width:100%}
+#form textarea{min-height:120px;resize:vertical}
+#form input:focus,#form textarea:focus{outline:2px solid var(--graf);outline-offset:0;border-color:var(--graf)}
+#form input[type=file]{padding:10px;background:var(--g);font-size:14.5px}
+.r2{display:grid;gap:14px}
+#form .btn{width:100%;margin-top:4px}
+.info{font-size:13px;color:var(--mut);line-height:1.45}
+.ok{display:none;padding:14px;background:var(--g);border-left:4px solid var(--red);font-size:15px}
+/* DLA FIRM */
+.firmy ul{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.firmy li{position:relative;padding-top:18px}
+.firmy li .skala{position:absolute;left:0;right:0;top:0;height:10px}
+.firmy h3{margin-bottom:6px}
+.firmy p{color:var(--mut);font-size:15.5px;line-height:1.55}
+/* STOPKA */
+.stopka{background:var(--graf2);color:#b9c0c5;padding:48px 0 24px;font-size:15px;line-height:1.6}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff;text-decoration:underline}
+.st-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}
+.st-g .firma,.st-g .kon{grid-column:1/-1}
+.st-g .firma img{height:34px;width:auto;margin-bottom:14px}
+.st-g h3{color:#fff;font-size:15px;font-family:Inter,"Inter fb",Arial,sans-serif;font-weight:600;margin-bottom:8px}
+.st-g ul{list-style:none;margin:0;padding:0}
+.st-g li{padding:3px 0}
+.st-g .tel{color:#fff;font-weight:700;font-size:18px}
+.st-dol{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* TABLET / KOMPUTER */
+@media (min-width:600px){
+ .fakty ul{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .hero .btn{width:auto}
+ .marka-k{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .r2{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #form{padding:30px}
+ .firmy ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .st-g{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .st-g .firma,.st-g .kon{grid-column:auto}
+ .st-g a{overflow-wrap:anywhere}
+}
+@media (min-width:761px){
+ :root{--h1:84px}
+ .logo img{height:42px}
+ .top .szukaj.desk{display:flex;flex:1;max-width:720px;margin:0 clamp(16px,3vw,56px)}
+ .szukaj.mob,.akc.mm{display:none}
+ .akcje{gap:clamp(10px,1.4vw,28px)}
+ .tel-d{display:grid;line-height:1.25;text-decoration:none;color:var(--graf)}
+ .tel-d b{font-family:Saira,"Saira fb",Arial,sans-serif;font-size:19px}
+ .tel-d span{font-size:13px;color:var(--mut)}
+ .akc .t{display:inline;font-size:15px}
+ .kat{display:block}
+ .hero{min-height:calc(100svh - var(--h1) - 48px);justify-content:center}
+ .hero .foto{object-position:62% 22%}
+ .hero::before{background:linear-gradient(90deg,rgba(36,40,43,.95) 0%,rgba(36,40,43,.86) 30%,rgba(36,40,43,.45) 50%,rgba(36,40,43,0) 66%)}
+ .hero-in{padding:64px 0 84px}
+ .hero h1{font-size:clamp(40px,3.5vw,68px);max-width:12.5em}
+ .hero .lead{font-size:clamp(17px,1.1vw,20px);margin-top:20px;max-width:31em}
+ .hero .btn{margin-top:34px;min-height:60px;padding:0 34px;font-size:1.1rem}
+ .hero .skala{height:16px}
+ .hero .skala::after{left:max(32px,calc((100vw - 1760px)/2))}
+ .kafle{grid-auto-flow:row;grid-template-rows:none;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;margin-right:0;padding-right:0}
+ .tor{grid-auto-columns:calc((100% - 32px)/3);margin-right:0;padding-right:0;scrollbar-width:none}
+ .tor::-webkit-scrollbar{display:none}
+ .strz{display:flex;gap:8px}
+ .strz button{width:48px;height:48px;border:2px solid var(--graf);background:#fff;border-radius:3px;cursor:pointer;display:grid;place-items:center;color:var(--graf)}
+ .strz button:hover{background:var(--graf);color:#fff}
+ .strz button:disabled{opacity:.3;cursor:default;background:#fff;color:var(--graf)}
+ .wzorc{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+ .wzorc-foto{max-height:none;min-height:100%}
+ .wzorc-tekst{padding:clamp(56px,6vw,120px) clamp(32px,5vw,110px)}
+ .zap-g{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,5vw,110px);align-items:start}
+}
+@media (min-width:1100px){
+ .kafle{grid-template-columns:repeat(7,minmax(0,1fr))}
+ .tor{grid-auto-columns:calc((100% - 48px)/4)}
+ .marka{aspect-ratio:16/10}
+ .marki-g{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 80px;align-items:end}
+ .firmy ul{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px}
+}
+@media (min-width:1500px){.tor{grid-auto-columns:calc((100% - 64px)/5)}}
+@media (min-width:2100px){.tor{grid-auto-columns:calc((100% - 80px)/6)}}
+@media (min-width:761px) and (max-height:820px){
+ .hero h1{font-size:clamp(36px,3.1vw,52px)}
+ .hero-in{padding:44px 0 64px}
+ .hero .btn{margin-top:26px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+
+<header class="top">
+ <div class="wrap top-in">
+  <a class="logo" href="#" aria-label="Narzędzia Pomiarowe - strona główna"><img src="img/logo-jasne.webp" width="303" height="66" alt="Pomiarowe Narzędzia.pl"></a>
+  <form class="szukaj desk" role="search" onsubmit="return false"><input type="search" placeholder="Szukaj: suwmiarka 150 mm, czujnik zegarowy..." aria-label="Szukaj w sklepie"><button type="submit" aria-label="Szukaj"><svg class="ico" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6l4.6 4.6"/></svg></button></form>
+  <div class="akcje">
+   <a class="tel-d" href="tel:+48696927659"><b>696 927 659</b><span>pn-pt 9:00-17:00</span></a>
+   <a class="akc mm" href="tel:+48696927659" aria-label="Zadzwoń: 696 927 659"><svg class="ico" viewBox="0 0 20 20"><path d="M4 2.8h3.2l1.4 4-2 1.3a10 10 0 0 0 5.3 5.3l1.3-2 4 1.4V16a1.6 1.6 0 0 1-1.7 1.6A14.5 14.5 0 0 1 2.4 4.5 1.6 1.6 0 0 1 4 2.8z"/></svg></a>
+   <a class="akc" href="#" aria-label="Konto klienta"><svg class="ico" viewBox="0 0 20 20"><circle cx="10" cy="6.5" r="3.5"/><path d="M3.2 17.5c.8-3.4 3.4-5.3 6.8-5.3s6 1.9 6.8 5.3"/></svg><span class="t">Konto</span></a>
+   <a class="akc kosz" href="#" aria-label="Koszyk, 0 produktów"><span class="ik"><svg class="ico" viewBox="0 0 20 20"><path d="M1.5 3h2.6l2 9.5h9.6l1.8-7H5.2"/><circle cx="7.5" cy="16.2" r="1.3"/><circle cx="14.5" cy="16.2" r="1.3"/></svg><b>0</b></span><span class="t">0,00 zł</span></a>
+   <button class="akc mm" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="panel"><svg class="ico" viewBox="0 0 20 20"><path d="M2.5 5h15M2.5 10h15M2.5 15h9"/></svg></button>
+  </div>
+ </div>
+ <form class="szukaj mob" role="search" onsubmit="return false"><input type="search" placeholder="Szukaj narzędzia..." aria-label="Szukaj w sklepie"><button type="submit" aria-label="Szukaj"><svg class="ico" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.6 12.6l4.6 4.6"/></svg></button></form>
+ <nav class="kat" aria-label="Kategorie">
+  <ul class="wrap">
+   <li><a class="wszystkie" href="#kategorie">Wszystkie kategorie</a></li>
+   <li><a href="#kategorie">Suwmiarki</a></li>
+   <li><a href="#kategorie">Mikrometry</a></li>
+   <li><a href="#kategorie">Czujniki zegarowe</a></li>
+   <li><a href="#kategorie">Wysokościomierze</a></li>
+   <li><a href="#kategorie">Sprawdziany</a></li>
+   <li><a href="#kategorie">Digi-Pas</a></li>
+   <li><a href="#kategorie">Aparatura pomiarowa</a></li>
+   <li class="wyr"><a href="#wzorcowanie">Wzorcowanie 24 h</a></li>
+  </ul>
+ </nav>
+</header>
+
+<div class="panel" id="panel" aria-hidden="true">
+ <div class="panel-g"><img src="img/logo-jasne.webp" width="303" height="66" alt="" style="height:28px;width:auto"><button class="akc" id="zamknij" aria-label="Zamknij menu"><svg class="ico" viewBox="0 0 20 20"><path d="M4 4l12 12M16 4L4 16"/></svg></button></div>
+ <nav aria-label="Menu">
+  <h3>Kategorie</h3>
+  <ul>
+   <li><a href="#kategorie">Narzędzia ze świadectwem wzorcowania</a></li>
+   <li><a href="#kategorie">Suwmiarki</a></li>
+   <li><a href="#kategorie">Mikrometry</a></li>
+   <li><a href="#kategorie">Czujniki zegarowe</a></li>
+   <li><a href="#kategorie">Wysokościomierze</a></li>
+   <li><a href="#kategorie">Sprawdziany</a></li>
+   <li><a href="#kategorie">Przyrządy Digi-Pas</a></li>
+   <li><a href="#kategorie">Płyty traserskie</a></li>
+   <li><a href="#kategorie">Aparatura pomiarowa</a></li>
+   <li><a href="#kategorie">Wszystkie kategorie</a></li>
+  </ul>
+  <h3>Sklep</h3>
+  <ul>
+   <li><a href="#wzorcowanie">Wzorcowanie od 24 h</a></li>
+   <li><a href="#firmy">Płatność i dostawa</a></li>
+   <li><a href="#zapytanie">Sprawdziany na zamówienie</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <div class="kont">Doradzimy przy doborze narzędzia:<br><a href="tel:+48696927659">696 927 659</a><br>pn-pt 9:00-17:00</div>
+ </nav>
+</div>
+
+<main id="tresc">
+<section class="hero">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" sizes="100vw">
+  <img class="foto" src="img/hero-2000.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w, img/hero-2560.webp 2560w" sizes="100vw" width="2000" height="1085" alt="Przyrząd do wzorcowania czujników zegarowych na stole pomiarowym" fetchpriority="high">
+ </picture>
+ <div class="wrap hero-in">
+  <h1>Narzędzia pomiarowe ze świadectwem wzorcowania</h1>
+  <p class="lead">Precyzja zaczyna się od pomiaru. Ponad 1500 narzędzi dla warsztatów, kontroli jakości i laboratoriów, a do zakupionych narzędzi wzorcowanie we własnym laboratorium już od 24 godzin.</p>
+  <a class="btn" href="#kategorie">Przeglądaj katalog <svg class="str" viewBox="0 0 18 10"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a>
+ </div>
+ <div class="skala" aria-hidden="true"></div>
+</section>
+
+<section class="fakty" aria-label="Najważniejsze informacje">
+ <ul class="wrap">
+  <li><b>Wysyłka w 24 h</b>dla produktów z tym oznaczeniem, kurierem DHL</li>
+  <li><b>Wzorcowanie od 24 h</b>we własnym laboratorium wzorcującym</li>
+  <li><b>Dystrybutor HOGETEX</b>jedyny autoryzowany w Polsce</li>
+  <li><b>Terminy płatności</b>7, 14 lub 30 dni przy stałej współpracy</li>
+ </ul>
+</section>
+
+<section class="sek kategorie" id="kategorie">
+ <div class="wrap">
+  <div class="sek-g">
+   <div class="skala" aria-hidden="true"></div>
+   <div><h2>Kategorie narzędzi</h2><p style="margin-top:10px">Od suwmiarek i mikrometrów po płyty granitowe i twardościomierze.</p></div>
+   <a class="lnk" href="#">Wszystkie kategorie</a>
+  </div>
+  <div class="kafle">
+   <a class="kafel" href="#"><img src="img/k-suwmiarki.webp" width="480" height="360" alt="Suwmiarki" loading="lazy" decoding="async"><div><h3>Suwmiarki</h3><p>cyfrowe, analogowe, zegarowe, traserskie i specjalne</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-mikrometry.webp" width="480" height="360" alt="Mikrometry" loading="lazy" decoding="async"><div><h3>Mikrometry</h3><p>zewnętrzne, wewnętrzne, do gwintów, talerzykowe</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-czujniki.webp" width="480" height="360" alt="Czujniki zegarowe" loading="lazy" decoding="async"><div><h3>Czujniki zegarowe</h3><p>analogowe, elektroniczne i diatesty</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-wysokosciomierze.webp" width="480" height="360" alt="Wysokościomierze" loading="lazy" decoding="async"><div><h3>Wysokościomierze</h3><p>analogowe i elektroniczne</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-digipas.webp" width="480" height="360" alt="Przyrządy Digi-Pas" loading="lazy" decoding="async"><div><h3>Przyrządy Digi-Pas</h3><p>poziomice i kątomierze cyfrowe</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-sprawdziany.webp" width="480" height="360" alt="Sprawdziany" loading="lazy" decoding="async"><div><h3>Sprawdziany</h3><p>tłoczkowe, gwintowe, pierścienie wzorcowe</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-plyty.webp" width="480" height="360" alt="Płyty traserskie" loading="lazy" decoding="async"><div><h3>Płyty traserskie</h3><p>granitowe, żeliwne i stoły</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-twardosc.webp" width="480" height="360" alt="Aparatura pomiarowa" loading="lazy" decoding="async"><div><h3>Aparatura pomiarowa</h3><p>twardościomierze, chropowatościomierze, siłomierze</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-srednicowki.webp" width="480" height="360" alt="Średnicówki" loading="lazy" decoding="async"><div><h3>Średnicówki</h3><p>dwupunktowe, trzypunktowe, palcowe, taśmowe</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-szczelinomierze.webp" width="480" height="360" alt="Szczelinomierze" loading="lazy" decoding="async"><div><h3>Szczelinomierze</h3><p>listkowe i taśmowe, także INOX</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-pryzmy.webp" width="480" height="360" alt="Pryzmy" loading="lazy" decoding="async"><div><h3>Pryzmy</h3><p>jednożłobkowe, magnetyczne, z uchwytem</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-miary.webp" width="480" height="360" alt="Miary zwijane" loading="lazy" decoding="async"><div><h3>Miary zwijane</h3><p>standard, klasa 1, z magnesem, elektroniczne</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-katowniki.webp" width="480" height="360" alt="Kątowniki" loading="lazy" decoding="async"><div><h3>Kątowniki</h3><p>płaskie MKSa, ze stopką MKSc, krawędziowe</p></div></a>
+   <a class="kafel" href="#"><img src="img/k-katomierze.webp" width="480" height="360" alt="Kątomierze" loading="lazy" decoding="async"><div><h3>Kątomierze</h3><p>traserskie, uniwersalne, elektroniczne</p></div></a>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="polecane">
+ <div class="wrap">
+  <div class="sek-g">
+   <div class="skala" aria-hidden="true"></div>
+   <div><h2>Polecane w sklepie</h2><p style="margin-top:10px">Ceny brutto, a pod nimi netto - do każdego zamówienia faktura VAT.</p></div>
+   <div class="strz"><button type="button" id="wstecz" aria-label="Poprzednie produkty"><svg class="str" viewBox="0 0 18 10" style="width:18px;height:10px;fill:none;stroke:currentColor;stroke-width:2"><path d="M18 5H2M6 1L2 5l4 4"/></svg></button><button type="button" id="dalej" aria-label="Następne produkty"><svg class="str" viewBox="0 0 18 10" style="width:18px;height:10px;fill:none;stroke:currentColor;stroke-width:2"><path d="M0 5h16M12 1l4 4-4 4"/></svg></button></div>
+  </div>
+  <div class="karuzela"><div class="tor" id="tor">
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-linial.webp" width="480" height="360" alt="Liniał stalowy powierzchniowy sztywny 1000x50x10 mm DIN 874/1 + świadectwo wzorcowania" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Liniał stalowy powierzchniowy sztywny 1000x50x10 mm DIN 874/1 + świadectwo wzorcowania</a></h3><p class="cena">820,00 zł</p><p class="netto">666,67 zł netto</p><p class="dost">Wysyłka w 24 h</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-suwm150.webp" width="480" height="360" alt="Suwmiarka elektroniczna 150 mm 0,01 mm HOGETEX TOP z wyjściem danych + świadectwo wzorcowania" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Suwmiarka elektroniczna 150 mm 0,01 mm HOGETEX TOP z wyjściem danych + świadectwo wzorcowania</a></h3><p class="cena">175,00 zł</p><p class="netto">142,28 zł netto</p><p class="dost">Wysyłka w 24 h</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-rockwell.webp" width="480" height="360" alt="Twardościomierz Rockwell&#x27;a HRC, HRB, HRA" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Twardościomierz Rockwell&#x27;a HRC, HRB, HRA</a></h3><p class="cena">9 750,00 zł</p><p class="netto">7 926,83 zł netto</p><p class="dost dni">Wysyłka ok. 4-6 dni roboczych</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-pilniki.webp" width="480" height="360" alt="Zestaw pilników do pomiaru twardości HRC40-HRC65 Tsubosan Japan" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Zestaw pilników do pomiaru twardości HRC40-HRC65 Tsubosan Japan</a></h3><p class="cena">595,00 zł</p><p class="netto">483,74 zł netto</p><p class="dost">Wysyłka w 24 h</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-dwl280.webp" width="480" height="360" alt="Poziomica elektroniczna 0,05° IP67 DWL-280Pro" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Poziomica elektroniczna 0,05° IP67 DWL-280Pro</a></h3><p class="cena">415,00 zł</p><p class="netto">337,40 zł netto</p><p class="dost dni">Wysyłka ok. 4-6 dni roboczych</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-dwl1500.webp" width="480" height="360" alt="Poziomica precyzyjna Bluetooth 0,002° DWL-1500XY" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Poziomica precyzyjna Bluetooth 0,002° DWL-1500XY</a></h3><p class="cena">2 575,00 zł</p><p class="netto">2 093,50 zł netto</p><p class="dost dni">Wysyłka ok. 4-6 dni roboczych</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-sola.webp" width="480" height="360" alt="Miara zwijana SOLA PRO-TM 3 m / 19 mm, klasa 1, z wzorcowaniem" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Miara zwijana SOLA PRO-TM 3 m / 19 mm, klasa 1, z wzorcowaniem</a></h3><p class="cena">159,00 zł</p><p class="netto">129,27 zł netto</p><p class="dost">Wysyłka w 24 h</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-dwl90.webp" width="480" height="360" alt="Kątomierz elektroniczny DWL-90Pro DIGI-PAS 0,05° Bluetooth" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Kątomierz elektroniczny DWL-90Pro DIGI-PAS 0,05° Bluetooth</a></h3><p class="cena">295,00 zł</p><p class="netto">239,84 zł netto</p><p class="dost">Wysyłka w 24 h</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-hr311.webp" width="480" height="360" alt="Chropowatościomierz HR-311 HOGETEX z sondą zewnętrzną" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Chropowatościomierz HR-311 HOGETEX z sondą zewnętrzną</a></h3><p class="cena">7 175,00 zł</p><p class="netto">5 833,33 zł netto</p><p class="dost dni">Wysyłka ok. 4-6 dni roboczych</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+   <article class="prod"><a href="#" tabindex="-1" aria-hidden="true"><img src="img/p-dwl1900.webp" width="480" height="360" alt="Poziomica precyzyjna cyfrowa dwuosiowa Bluetooth 0,001° HOGETEX DWL-1900XY" loading="lazy" decoding="async"></a><div class="opis"><h3><a href="#">Poziomica precyzyjna cyfrowa dwuosiowa Bluetooth 0,001° HOGETEX DWL-1900XY</a></h3><p class="cena">2 975,00 zł</p><p class="netto">2 418,70 zł netto</p><p class="dost dni">Wysyłka ok. 4-6 dni roboczych</p><div class="dokosz"><button type="button">Do koszyka</button></div></div></article>
+  </div></div>
+ </div>
+</section>
+
+<section class="wzorc" id="wzorcowanie">
+ <div class="wzorc-foto"><img src="img/wzorc-900.webp" srcset="img/wzorc-600.webp 600w, img/wzorc-900.webp 900w" sizes="(min-width:761px) 42vw, 100vw" width="900" height="1584" alt="Czujnik cyfrowy HOGETEX na płycie pomiarowej" loading="lazy" decoding="async"></div>
+ <div class="wzorc-tekst">
+  <div class="skala" aria-hidden="true"></div>
+  <h2>Kupujesz narzędzie i od razu masz świadectwo</h2>
+  <p>Do zakupionych narzędzi wykonujemy wzorcowanie we własnym laboratorium wzorcującym <a href="https://wzorcowaniepomiarowe.pl/" rel="noopener">wzorcowaniepomiarowe.pl</a> - już od 24 godzin. Zakup i wzorcowanie załatwiasz w jednym zamówieniu, a narzędzie trafia do działu kontroli jakości gotowe do pracy.</p>
+  <ul class="lista">
+   <li><b>Narzędzia ze świadectwem wzorcowania</b> - osobna kategoria z gotowymi zestawami: suwmiarki, liniały, miary zwijane i inne.</li>
+   <li><b>Świadectwo w 24 h</b> - kategoria narzędzi, które wzorcujemy w najkrótszym terminie.</li>
+   <li><b>Pełna dokumentacja</b> - wyłącznie nowe narzędzia, prosto z magazynów dostawców.</li>
+  </ul>
+  <a class="btn" href="#">Narzędzia z wzorcowaniem <svg class="str" viewBox="0 0 18 10"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a>
+ </div>
+</section>
+
+<section class="sek" id="marki">
+ <div class="wrap">
+  <div class="marki-g">
+   <div><div class="skala" aria-hidden="true" style="max-width:160px;margin-bottom:14px"></div><h2>Jedyny autoryzowany dystrybutor HOGETEX w Polsce</h2></div>
+   <p>HOGETEX dostarcza narzędzia pomiarowe dla przemysłu od 1970 roku, a jego magazyn centralny od 2005 roku działa w Holandii. Dzięki bezpośredniej współpracy oferujemy te narzędzia w konkurencyjnych cenach i krótkich terminach, a przy nietypowym doborze wspierają nas inżynierowie HOGETEX.</p>
+  </div>
+  <div class="marka-k">
+   <a class="marka" href="#"><img src="img/hogetex-1100.webp" srcset="img/hogetex-700.webp 700w, img/hogetex-1100.webp 1100w" sizes="(min-width:600px) 50vw, 100vw" width="1100" height="1757" alt="Mikrometr cyfrowy i suwmiarka HOGETEX" loading="lazy" decoding="async" style="object-position:50% 0"><div><h3>HOGETEX</h3><p>Suwmiarki, mikrometry, czujniki zegarowe, wysokościomierze i sprawdziany</p></div></a>
+   <a class="marka" href="#"><img src="img/digipas-1100.webp" srcset="img/digipas-700.webp 700w, img/digipas-1100.webp 1100w" sizes="(min-width:600px) 50vw, 100vw" width="1100" height="979" alt="Poziomice cyfrowe Digi-Pas" loading="lazy" decoding="async"><div><h3>Digi-Pas</h3><p>Poziomice i kątomierze cyfrowe, także z odczytem przez Bluetooth</p></div></a>
+  </div>
+  <p class="inne">W katalogu także: <b>KINEX</b>, <b>SOLA</b>, <b>Tsubosan</b>, <b>MARUI KEIKI</b>, <b>ULTRA</b> i inne marki.</p>
+ </div>
+</section>
+
+<section class="sek zap" id="zapytanie">
+ <div class="wrap zap-g">
+  <div class="zap-t" id="kontakt">
+   <div class="skala" aria-hidden="true" style="max-width:160px;margin-bottom:14px"></div>
+   <h2>Sprawdziany na zamówienie i dobór narzędzi</h2>
+   <p>Sprawdziany tłoczkowe, gwintowe i nastawne wykonujemy według wymagań klienta i rysunku technicznego. Jeśli nie ma w katalogu tego, czego szukasz, napisz - znajdziemy rozwiązanie.</p>
+   <p>Nie wiesz, które narzędzie pasuje do Twojego zastosowania? Pomożemy dobrać je do wymagań normatywnych i specyfiki branży.</p>
+   <div class="dane">
+    <a href="tel:+48696927659">696 927 659</a>
+    <a class="m" href="mailto:sklep@pomiarowenarzedzia.pl">sklep@pomiarowenarzedzia.pl</a>
+    <span>pn-pt 9:00-17:00, ul. Łęczycka 55, 85-737 Bydgoszcz</span>
+   </div>
+  </div>
+  <form id="form" novalidate>
+   <div class="r2">
+    <label>Imię i nazwisko<input name="n" autocomplete="name"></label>
+    <label>Firma<input name="f" autocomplete="organization"></label>
+   </div>
+   <label>E-mail lub telefon<input name="k" autocomplete="email"></label>
+   <label>Czego potrzebujesz?<textarea name="t" placeholder="np. sprawdzian tłoczkowy fi 12 H7, 2 szt."></textarea></label>
+   <label>Rysunek techniczny (opcjonalnie)<input type="file" name="r" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf"></label>
+   <button class="btn" type="submit">Wyślij zapytanie</button>
+   <p class="info">Odpowiadamy w dni robocze. Dane z formularza służą tylko do odpowiedzi na zapytanie.</p>
+   <p class="ok" id="ok" role="status">To podgląd strony - formularz zacznie wysyłać zapytania na docelowej stronie.</p>
+  </form>
+ </div>
+</section>
+
+<section class="sek firmy" id="firmy">
+ <div class="wrap">
+  <div class="sek-g"><div><h2>Zakupy dla firm</h2></div></div>
+  <ul>
+   <li><div class="skala" aria-hidden="true"></div><h3>Ceny netto i brutto</h3><p>Przy każdym produkcie obie ceny. Do zamówienia wystawiamy fakturę VAT.</p></li>
+   <li><div class="skala" aria-hidden="true"></div><h3>Dostawa kurierem DHL</h3><p>Przy przedpłacie 27 zł, za pobraniem 37 zł (paczki do 20 kg), wysyłka w dni robocze.</p></li>
+   <li><div class="skala" aria-hidden="true"></div><h3>Płatność</h3><p>Przelew, szybka płatność online albo gotówka przy odbiorze przesyłki.</p></li>
+   <li><div class="skala" aria-hidden="true"></div><h3>Terminy płatności</h3><p>Przy stałej współpracy ustalamy termin płatności 7, 14 lub 30 dni.</p></li>
+  </ul>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="st-g">
+   <div class="firma"><img src="img/logo-ciemne.webp" width="372" height="81" alt="Pomiarowe Narzędzia.pl" loading="lazy"><p>Narzędzia Pomiarowe SAWERON Rafał Węgrzyn<br>ul. Łęczycka 55, 85-737 Bydgoszcz<br>NIP 753-163-24-00</p></div>
+   <div class="kon"><h3>Kontakt</h3><ul><li><a class="tel" href="tel:+48696927659">696 927 659</a></li><li><a href="mailto:sklep@pomiarowenarzedzia.pl">sklep@pomiarowenarzedzia.pl</a></li><li>pn-pt 9:00-17:00</li></ul></div>
+   <div><h3>Sklep</h3><ul><li><a href="#">O sklepie</a></li><li><a href="#firmy">Płatność i przesyłka</a></li><li><a href="#">Zwroty i reklamacje</a></li><li><a href="#">Regulamin</a></li><li><a href="#">Polityka cookies</a></li></ul></div>
+   <div><h3>Na skróty</h3><ul><li><a href="#wzorcowanie">Wzorcowanie od 24 h</a></li><li><a href="#zapytanie">Sprawdziany na zamówienie</a></li><li><a href="#marki">HOGETEX</a></li><li><a href="#">Konto klienta</a></li></ul></div>
+  </div>
+  <div class="st-dol"><span>© 2026 SAWERON Narzędzia Pomiarowe</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=pomiarowenarzedzia.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var p=document.getElementById('panel'),b=document.getElementById('burger');
+ function ust(o){p.classList.toggle('otw',o);p.setAttribute('aria-hidden',!o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+ b.addEventListener('click',function(){ust(true)});
+ document.getElementById('zamknij').addEventListener('click',function(){ust(false)});
+ p.addEventListener('click',function(e){if(e.target.closest('a'))ust(false)});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')ust(false)});
+ var t=document.getElementById('tor'),w=document.getElementById('wstecz'),d=document.getElementById('dalej');
+ function krok(){var c=t.querySelector('.prod');return c?c.getBoundingClientRect().width+16:300}
+ function stan(){w.disabled=t.scrollLeft<4;d.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+ w.addEventListener('click',function(){t.scrollBy({left:-krok(),behavior:'smooth'})});
+ d.addEventListener('click',function(){t.scrollBy({left:krok(),behavior:'smooth'})});
+ t.addEventListener('scroll',stan,{passive:true});requestAnimationFrame(function(){requestAnimationFrame(stan)});
+ /* przeciaganie mysza */
+ document.querySelectorAll('.tor,.kafle').forEach(function(el){var x0,s0,ruch=false,wcis=false;
+  el.addEventListener('mousedown',function(e){wcis=true;ruch=false;x0=e.pageX;s0=el.scrollLeft;el.style.scrollSnapType='none'});
+  window.addEventListener('mousemove',function(e){if(!wcis)return;var dx=e.pageX-x0;if(Math.abs(dx)>5)ruch=true;el.scrollLeft=s0-dx});
+  window.addEventListener('mouseup',function(){if(!wcis)return;wcis=false;el.style.scrollSnapType=''});
+  el.addEventListener('click',function(e){if(ruch){e.preventDefault();ruch=false}},true);
+  el.addEventListener('dragstart',function(e){e.preventDefault()});
+ });
+ document.querySelectorAll('.dokosz button').forEach(function(x){x.addEventListener('click',function(){x.textContent='Dodano do koszyka'})});
+ document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
